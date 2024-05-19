@@ -8,18 +8,35 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="button.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a class="logo" href="#">Palavras Cafeinadas</a>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#">Sobre nós</a></li>
-                <li class="nav-item"><a href="#">Cafeteria</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
-                <li class="nav-item"><a href="#">19-991256972</a></li>
+                <li class="nav-item">
+                    <a href="#">Sobre nós</a>
+                    <span class="sub" style="width: 80%"></span>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Cafeteria</a>
+                    <span class="sub" style="width: 80%"></span>
+                </li>
+                <li class="itemLogo">
+                    <a class="logo" href="#"><img src="Assets/logo_escura-navbar.svg" style="width: 50px" />
+                        <p>Palavras Cafeinadas</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contato</a>
+                    <span class="sub" style="width: 80%"></span>
+                </li>
+                <li class="nav-item" style="display: flex">
+                    <img src="Assets/Icon - Phone-navbar.svg" alt="" />
+                    <a href="#" style="margin-left: 1rem">19-991256972</a>
+                </li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -64,32 +81,35 @@
                 <span class="sub"></span>
             </div>
             <div class="wrapper">
-                <a><img src="Assets/flechaanterior-carrossel-btn.svg"></a>
+                <a><img src="Assets/flechaanterior-carrossel-btn.svg" alt=""></a>
                 <ul class="carrossel">
-                <li class="blocoCarrosel">
-                    <div class="img"><img src="Assets/brigadeirodecapuccinio.svg" alt="img"></div>
-                    <h1>Brigadeiro De Capuccino</h1>
-                    <p>O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p>
-                </li>
-                <li class="blocoCarrosel">
-                    <div class="img"><img src="Assets/bolodechocolate.svg" alt="img"></div>
-                    <h1>Bolo de Chocolate</h1>
-                    <p>O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...
-                    </p>
-                </li>
-                <li class="blocoCarrosel">
-                    <div class="img"><img src="Assets/paodemel.svg" alt="img"></div>
-                    <h1>Pão de Mel</h1>
-                    <p>O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...</p>
-                </li>
-                <li class="blocoCarrossel">
-                    <div><img src="Assets/sorvetedecafe.svg" alt="img"></div>
-                    <h1>Sorvete De Café</h1>
-                    <p>O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...
-                    </p>
-                </li>
+                    <li id="l1" class="blocoCarrossel">
+                        <div class="img"><img src="Assets/brigadeirodecapuccinio.svg" alt="img"></div>
+                        <h1>Brigadeiro De Capuccino</h1>
+                        <p>O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p>
+                    </li>
+                    <li id="l2" class="blocoCarrossel">
+                        <div class="img"><img src="Assets/bolodechocolate.svg" alt="img"></div>
+                        <h1>Bolo de Chocolate</h1>
+                        <p>O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio
+                            com...
+                        </p>
+                    </li>
+                    <li id="l3" class="blocoCarrossel">
+                        <div class="img"><img src="Assets/paodemel.svg" alt="img"></div>
+                        <h1>Pão de Mel</h1>
+                        <p>O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...
+                        </p>
+                    </li>
+                    <li id="l4" class="blocoCarrossel">
+                        <div class="img"><img src="Assets/sorvetedecafe.svg" alt="img"></div>
+                        <h1>Sorvete De Café</h1>
+                        <p>O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no
+                            fim...
+                        </p>
+                    </li>
                 </ul>
-                <a><img src="Assets/flechaproximo-carrossel-btn.svg"></a>
+                <a><img src="Assets/flechaproximo-carrossel-btn.svg" alt=""></a>
             </div>
         </section>
         <section id="form-contato">
@@ -99,43 +119,58 @@
             <div id="form-block">
                 <div id="words-form">
                     <div id="ender-form">
-                        <p><img src="Assets/vector_tel.svg" alt=""> 19-991256972</p>
-                        <p><img src="Assets/vector_email.svg" alt=""> contato@gmail.com</p>
-                        <p><img src="Assets/vector_local.svg" alt=""> Av. Paulista, 1324 - Bela Vista, São Paulo - SP,
-                            01310-100</p>
+                        <div>
+                            <img src="Assets/vector_tel.svg" alt="" />
+                            <p>19-991256972</p>
+                        </div>
+                        <div>
+                            <img src="Assets/vector_email.svg" alt="" />
+                            <p>contato@gmail.com</p>
+                        </div>
+                        <div>
+                            <img src="Assets/vector_local.svg" alt="" />
+                            <p>
+                                Av. Paulista, 1324 - Bela Vista,<br> São Paulo -
+                                SP, <br> 01310-100
+                            </p>
+                        </div>
                         <span class="sub sub2"></span>
                     </div>
                     <div id="social-form">
-                        <p><img src="Assets/vector_insta.svg" alt=""> @palavrascafeinadas</p>
-                        <p><img src="Assets/vector_facebook.svg" alt=""> Palavras Cafeinadas</p>
+                        <div>
+                            <img src="Assets/vector_insta.svg" alt="" />
+                            <p>@palavrascafeinadas</p>
+                        </div>
+                        <div>
+                            <img src="Assets/vector_facebook.svg" alt="" />
+                            <p>Palavras Cafeinadas</p>
+                        </div>
                     </div>
                     <div id="logo-form">
-                        <img src="Assets/logo_branca 2-form.svg" alt="">
+                        <img src="Assets/logo_branca 2-form.svg" alt="" />
                         <h1 class="font">Palavras Cafeinadas</h1>
                     </div>
                 </div>
                 <div id="camp-form">
                     <form>
-
                         <div id="nome-form">
                             <label>Nome</label>
-                            <input type="text" placeholder="Digite seu nome" name="nome" required>
+                            <input type="text" placeholder="Digite seu nome" name="nome" required />
                         </div>
                         <div id="email-form">
                             <label>E-Mail</label>
-                            <input type="text" placeholder="Digite seu E-Mail" name="email" required>
+                            <input type="text" placeholder="Digite seu E-Mail" name="email" required />
                         </div>
                         <div id="mensg-form">
                             <label>Mensagem</label>
-                            <input type="text" name="mensagem" class="caixaMensagem" required>
+                            <textarea type="text" name="mensagem" class="caixaMensagem" style="resize: none;"
+                                required></textarea>
                         </div>
 
-                        <a class="buttondecoration btweb"><img src="Assets/EnviarMensagem-btn.svg" alt=""></a>
-
+                        <a class="buttondecoration btweb"><img src="Assets/EnviarMensagem-btn.svg" alt="" /></a>
                     </form>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>
