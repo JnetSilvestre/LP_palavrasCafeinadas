@@ -169,7 +169,7 @@ main #form-contato {
 }
 
 main #title-form {
-    width: 100%;
+    width: fit-content;
     color: black;
     height: 100%;
     display: flex;
@@ -181,6 +181,7 @@ main #title-form {
 
 main #form-block {
     display: flex;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
 }
 
 main #words-form {
@@ -194,16 +195,15 @@ main #words-form {
     text-align: left;
     color: rgba(240, 240, 240, 1);
 }
+
 main #logo-form .font{
     font-family: Cormorant Garamond;
+    height: 100%;
+    width: 100%;
     font-size: 32px;
     font-weight: 400;
     line-height: 38.75px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     width: 127px;
-    display: flexbox;
 }
 
 .nomes {
@@ -212,6 +212,42 @@ main #logo-form .font{
 
 main #camp-form {
     width: 700px;
+    background-color: hsla(45, 29%, 95%, 1);
+    padding: 50px 50px 80px 50px;
+
+
+}
+
+form {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(31, 12, 0, 1);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+form input,
+form .caixaMensagem {
+    outline: unset;
+    padding: 20px;
+    width: 609px;
+    height: 70px;
+    border: 1px solid rgba(143, 84, 46, 1);
+    border-radius: 8px;
+}
+
+#mensg-form .caixaMensagem {
+    height: 220px;
+    text-align: left;
 }
 
 #Cafeteria {
