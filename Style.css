@@ -13,6 +13,14 @@
     }
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +29,10 @@
     text-decoration: none;
 }
 
-body {
-    color: #f0f0f0;
-    background: white;
+body,
+main {
+    color: hsla(45, 29%, 95%, 1);
+    background: hsla(45, 29%, 95%, 1);
 }
 
 .navbar {
@@ -131,7 +140,7 @@ main #SobreNos {
     width: 100%;
     height: auto;
     background-color: hsla(45, 29%, 95%, 1);
-    padding: 3.5rem 10.938rem 5.5rem 6.5rem;
+    padding: 3.5rem 14.938rem 5.5rem 6.5rem;
 }
 
 main #cont_sobre {
@@ -176,6 +185,14 @@ main #paragrafosobre {
     flex-direction: column;
     justify-content: space-between;
     row-gap: 1rem;
+}
+
+.cafeOnda {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    top: 100px;
 }
 
 main #form-contato {
@@ -283,11 +300,10 @@ form .caixaMensagem {
 
 #Cafeteria {
     background-color: rgba(128, 69, 31, 1);
-
 }
 
 #title-cafeteria {
-    padding: 1rem;
+    padding-top: 10rem;
     font-family: Cormorant Garamond;
     font-size: 40px;
     font-weight: 700;
@@ -316,8 +332,9 @@ form .caixaMensagem {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 0 35px;
+    padding-top: 2.7rem;
+    padding-bottom: 7rem;
+
 }
 
 .wrapper a {
@@ -418,9 +435,4 @@ footer {
 #info-footer2 {
     padding-right: 7.5rem;
     width: auto;
-}
-
-html,
-body {
-    height: 100%;
 }
